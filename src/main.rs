@@ -10,7 +10,7 @@ struct Args {
     date: String,
     #[arg(short, long, required = true)]
     time: String,
-    #[arg(short, long, required = false)]
+    #[arg(short, long, required = true)]
     abbr: String,
     #[arg(short, long, default_value = "Europe/Warsaw")]
     local_timezone: String,
